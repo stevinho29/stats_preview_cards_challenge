@@ -6,7 +6,7 @@ body{
     height: 100vh;
     position: relative;
     background-color: hsl(233, 47%, 7%);
-    font-family: 'Inter', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
     color: white;
 }
 
@@ -17,9 +17,9 @@ body{
     top:50%;
     left: 50%;
     width: 1090px;
-    transform: translate(-545px, -300px);
+    transform: translate(-545px, -200px);
     background-color: hsl(244, 38%, 16%);
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -28,14 +28,26 @@ body{
     flex-direction: row;
     justify-content: space-between;
 }
+
 .row-indicators{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+.col-indicators{
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+}
+.legend-indicators{
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.6);
+}
 p{
     font-size: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Inter', sans-serif;
 }
 h2{
     font-size: 30px;
@@ -60,17 +72,14 @@ h2{
     text-align: left;
 }
 
-.section-indicators{
-    margin-bottom: 20px;
-}
-
-.indicators{
-    font-weight: bold;
-    font-family: 'Red Hat Display', sans-serif;
-}
-
 .text-highlighted{
     color: hsl(277, 64%, 61%);
+}
+.text-white{
+    color: hsl(0, 0%, 100%);
+}
+.paragraph-transparent{
+    color: hsla(0, 0%, 100%, 0.75);
 }
 
 @media screen and (max-width: 1024px){
@@ -92,9 +101,15 @@ h2{
         display: flex;
         flex-direction: column-reverse;
     }
+
     .row-indicators{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+    }
+    .col-indicators{
+        flex-basis: 50px;
+        font-family: 'Lexend Deca', sans-serif;
     }
     .image-persons{
         background: url("images/image-header-mobile.jpg");
@@ -104,10 +119,14 @@ h2{
         width: 540px;
         height: 300px;
     }
+
     .stats{
         text-align: center;
     }
+
     p{
-        font-size: 16px;
+        font-size: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 }
