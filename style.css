@@ -108,8 +108,8 @@ h2{
         justify-content: space-between;
     }
     .col-indicators{
-        flex-basis: 50px;
         font-family: 'Lexend Deca', sans-serif;
+        height: 100px;
     }
     .image-persons{
         background: url("images/image-header-mobile.jpg");
